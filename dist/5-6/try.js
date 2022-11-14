@@ -16,20 +16,22 @@ function getMessage(user: User, message: string): string {
     return `${user.name}(${user.age})「${message}」`
 }
 */
+/*
 class User {
-    constructor(name, age) {
+    name: string;
+    age: number;
+    constructor(name: string, age: number) {
         if (name === '') {
-            throw new Error;
-        }
-        else {
+            throw new Error
+        } else {
             this.name = name;
             this.age = age;
         }
     }
-    getMessage(message) {
-        return `${this.name}(${this.age})「${message}」`;
+    public getMessage(message: string): string {
+        return `${this.name}(${this.age})「${message}」`
     }
-}
+}*/
 const getMessage = createUser('toda', 26);
 console.log(getMessage('こんにちは'));
 function createUser(name, age) {

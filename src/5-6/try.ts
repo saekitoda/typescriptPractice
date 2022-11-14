@@ -15,7 +15,7 @@ function getMessage(user: User, message: string): string {
     return `${user.name}(${user.age})「${message}」`
 }
 */
-
+/*
 class User {
     name: string;
     age: number;
@@ -30,7 +30,7 @@ class User {
     public getMessage(message: string): string {
         return `${this.name}(${this.age})「${message}」`
     }
-}
+}*/
 
 const getMessage = createUser('toda', 26);
 console.log(getMessage('こんにちは'));
